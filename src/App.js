@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import RestaurantsContainer from './containers/RestaurantsContainer';
+import ReviewsContainer from './containers/ReviewsContainer';
+
 
 class App extends Component {
   render() {
@@ -10,5 +12,4 @@ class App extends Component {
     );
   }
 };
-
 export default App
