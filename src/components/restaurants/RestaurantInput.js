@@ -11,7 +11,7 @@ class RestaurantInput extends Component {
       }
   // }
 
-  handleOnChange(event) {
+  handleOnChange = (event) => {
     this.setState({
       text: event.target.value
       // did the above to pass tests but the below is more symantic:
@@ -19,7 +19,7 @@ class RestaurantInput extends Component {
     });
   }
 
-  handleOnSubmit(event) {
+  handleOnSubmit = (event) => {
     event.preventDefault();
     this.props.addRestaurant(this.state.text);
     // did the above to pass tests but the below is more symantic:

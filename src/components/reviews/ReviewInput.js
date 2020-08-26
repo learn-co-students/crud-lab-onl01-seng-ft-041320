@@ -6,16 +6,16 @@ class ReviewInput extends Component {
     text: ''
   }
 
-  handleOnChange(event) {
+  handleOnChange = (event) => {
     this.setState({
       text: event.target.value
     });
   }
 
-  handleOnSubmit(event) {
+  handleOnSubmit = (event) => {
     event.preventDefault();
     // this.props.addReview(this.state.text, this.props.restaurantId);
-    this.props.addReview({ text: this.state.text, restaurantId: this.props.restaurantId });
+    this.props.addReview({ text: this.state.text, restaurantId: this.props.restaurantId })
     this.setState({
       text: ''
     });
@@ -24,12 +24,12 @@ class ReviewInput extends Component {
   render() {
     return (
       <div>
-        <form onSubmit={(event) => this.handleOnSubmit(event)}>
+        <form onSubmit={this.handleOnSubmit}>
           <label>Add Review</label>
           <input
             type="text"
             value={this.state.text}
-            onChange={(event) => this.handleOnChange(event)} />
+            onChange={this.handleOnChange} />
           <input type="submit" />
         </form>
       </div>
