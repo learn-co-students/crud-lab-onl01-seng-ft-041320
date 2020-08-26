@@ -9,14 +9,14 @@ class Review extends Component {
   render() {
 
     // don't have to use this if not referencing it in li below:
-    const { review } = this.props
+    // const { review } = this.props
 
     return (
       <div>
         <li>
-          {review.text}
+          {/* {review.text} */}
           {/* or could use: */}
-          {/* {this.props.review.text} */}
+          {this.props.review.text}
         </li>
         <button onClick={this.handleOnClick}> X </button>
       </div>

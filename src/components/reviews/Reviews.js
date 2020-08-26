@@ -1,5 +1,4 @@
 import React from 'react';
-// import React, { Component } from 'react'
 import Review from './Review';
 
 const Reviews = props => {
