@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 
 class RestaurantInput extends Component {
 
-  constructor(props) {
-    super(props);
-      this.state = {
+  // constructor(props) {
+  //   super(props);
+      state = {
         text: ''
         // did the above to pass tests but the below is more symantic:
         // name: ''
       }
-  }
+  // }
 
   handleOnChange(event) {
     this.setState({

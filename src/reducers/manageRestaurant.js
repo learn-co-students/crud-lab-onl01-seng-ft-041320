@@ -14,7 +14,7 @@ export default function manageRestaurants(state = {
             }
             return { ...state, restaurants: [...state.restaurants, restaurant] }
         case 'DELETE_RESTAURANT':
-            return { restaurants: state.restaurants.filter(restaurant => restaurant.id !== action.id) }
+            return {restaurants: state.restaurants.filter(restaurant => restaurant.id !== action.id) }
         default:
             return state
     }
