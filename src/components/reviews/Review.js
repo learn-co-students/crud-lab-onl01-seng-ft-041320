@@ -10,7 +10,7 @@ class Review extends Component {
 
     // don't have to use this if not referencing it in li below:
     // const { review } = this.props
-
+console.log(this.props)
     return (
       <div>
         <li>
