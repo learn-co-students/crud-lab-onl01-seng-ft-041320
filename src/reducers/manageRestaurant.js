@@ -20,6 +20,7 @@ export default function manageRestaurants(state = {
         case 'ADD_REVIEW':
             const review = {
                 id: cuid(),
+                // this is labeled/nested as review from the mapDispatchToProps and the review input being an object that has nested attributes
                 text: action.review.text,
                 restaurantId: action.review.restaurantId
             }

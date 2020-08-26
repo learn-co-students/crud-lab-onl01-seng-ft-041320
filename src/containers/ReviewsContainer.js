@@ -18,6 +18,7 @@ class ReviewsContainer extends Component {
 const mapStateToProps = ({ reviews }) => ({ reviews })
 
 const mapDispatchToProps = dispatch => ({
+  // this is labeled as review, but could be anything - just remember to reference the extra nest in reducer!
   addReview: review => dispatch({ type: "ADD_REVIEW", review }),
   deleteReview: id => dispatch({ type: "DELETE_REVIEW", id })
 })
