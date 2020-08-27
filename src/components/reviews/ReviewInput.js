@@ -36,4 +36,5 @@ class ReviewInput extends Component {
   }
 };
 
+// should really just connect this to Redux store vs. having props passed down to it!
 export default ReviewInput;
